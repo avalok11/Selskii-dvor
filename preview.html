@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Макет MVP «Ферма Теремок» — превью экранов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  body { background: #22251f; color: #ece9e0; }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 32px 20px 60px; }
+  .wrap h1 { color: #fff; font-size: 1.9rem; margin-bottom: 6px; }
+  .wrap .sub { color: rgba(236,233,224,.6); margin-bottom: 28px; font-size: .95rem; }
+  .row { display: flex; gap: 22px; overflow-x: auto; padding-bottom: 18px; align-items: flex-start; }
+  .frame { flex: none; }
+  .frame__label { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(236,233,224,.55); margin-bottom: 8px; }
+  .phone { width: 390px; border-radius: 34px; border: 9px solid #0f110d; background: #0f110d; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+  .phone iframe { width: 390px; height: 720px; border: 0; display: block; background: #fff; }
+  .tablet { width: 820px; border-radius: 22px; border: 9px solid #0f110d; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+  .tablet iframe { width: 820px; height: 900px; border: 0; display: block; background: #fff; }
+  .hint { margin-top: 10px; font-size: .78rem; color: rgba(236,233,224,.45); }
+  a.link { color: #e9c58f; text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Ферма «Теремок» — макет MVP</h1>
+  <p class="sub">Клиентские экраны: витрина лотов, карточка животного, вход, мои заказы, оформление, оплата. Слева — мобильный вид (390 px), справа — планшет (820 px).</p>
+
+  <div class="row">
+    <div class="frame">
+      <div class="frame__label">Главная · телефон</div>
+      <div class="phone"><iframe src="index.html" title="Главная"></iframe></div>
+      <p class="hint"><a class="link" href="index.html">Открыть index.html →</a></p>
+    </div>
+    <div class="frame">
+      <div class="frame__label">Карточка барашка · телефон</div>
+      <div class="phone"><iframe src="lot.html" title="Карточка"></iframe></div>
+      <p class="hint"><a class="link" href="lot.html">Открыть lot.html →</a></p>
+    </div>
+    <div class="frame">
+      <div class="frame__label">Вход · телефон</div>
+      <div class="phone"><iframe src="login.html" title="Вход"></iframe></div>
+      <p class="hint"><a class="link" href="login.html">Открыть login.html →</a></p>
+    </div>
+    <div class="frame">
+      <div class="frame__label">Мои заказы · телефон</div>
+      <div class="phone"><iframe src="account.html" title="Мои заказы"></iframe></div>
+      <p class="hint"><a class="link" href="account.html">Открыть account.html →</a></p>
+    </div>
+    <div class="frame">
+      <div class="frame__label">Оформление · телефон</div>
+      <div class="phone"><iframe src="checkout.html" title="Оформление"></iframe></div>
+      <p class="hint"><a class="link" href="checkout.html">Открыть checkout.html →</a></p>
+    </div>
+    <div class="frame">
+      <div class="frame__label">Оплата · телефон</div>
+      <div class="phone"><iframe src="payment.html" title="Оплата"></iframe></div>
+      <p class="hint"><a class="link" href="payment.html">Открыть payment.html →</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="frame">
+      <div class="frame__label">Главная · планшет 820 px</div>
+      <div class="tablet"><iframe src="index.html" title="Главная планшет"></iframe></div>
+    </div>
+    <div class="frame">
+      <div class="frame__label">Карточка барашка · планшет 820 px</div>
+      <div class="tablet"><iframe src="lot.html" title="Карточка планшет"></iframe></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

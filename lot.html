@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Барашек №12 — Ферма «Теремок»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20a5 5 0 0 1 9-3"/><path d="M11 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M15 9.5 20 7l-2 4"/><path d="M15 9.5 18 13"/></svg>
+      </span>
+      <span class="logo__text">Теремок<span>ферма · животные под заказ</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html#lots">Лоты</a>
+      <a href="index.html#how">Как выращиваем</a>
+      <a href="index.html#prices">Цены</a>
+      <a href="index.html#delivery">Как получить</a>
+      <a href="index.html#faq">Вопросы</a>
+    </nav>
+    <div class="header__cta">
+      <a class="btn btn-outline" href="account.html">Мои заказы</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <div class="container">
+      <a href="index.html#lots">Лоты</a>
+      <a href="index.html#how">Как выращиваем</a>
+      <a href="index.html#prices">Цены</a>
+      <a href="index.html#faq">Вопросы</a>
+      <a href="login.html">Войти</a>
+      <a href="account.html">Мои заказы</a>
+      <a class="btn btn-tg btn-block" href="index.html#tg">Задать вопрос в Telegram</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="crumbs">
+    <a href="index.html">Главная</a> <span>/</span>
+    <a href="index.html#lots">Лоты</a> <span>/</span>
+    <span>Барашек №12</span>
+  </nav>
+</div>
+
+<section class="section section--tight">
+  <div class="container lot-layout">
+    <!-- Галерея -->
+    <div>
+      <div class="gallery__main">
+        <img id="galleryMain" src="assets/lot-lamb.jpg" alt="Барашек №12 на пастбище">
+      </div>
+      <div class="gallery__thumbs">
+        <button aria-current="true"><img src="assets/lot-lamb.jpg" alt="Барашек №12 крупным планом"></button>
+        <button><img src="assets/farm-landscape.jpg" alt="Пастбище, где пасётся отара"></button>
+        <button><img src="assets/farmer-barn.jpg" alt="Проверка животного в загоне"></button>
+      </div>
+
+      <div class="video-poster">
+        <img src="assets/hero-pasture.jpg" alt="Видео: барашек на пастбище">
+        <span class="video-poster__play">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>
+        </span>
+        <span class="video-poster__label">Видео · 1:24 · барашек №12 на выпасе</span>
+      </div>
+
+      <div class="note" style="margin-top:18px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+        <span>Видео и фото снимает фермер на телефон. По запросу пришлём свежее видео с боков и запись взвешивания.</span>
+      </div>
+    </div>
+
+    <!-- Панель покупки -->
+    <div class="panel panel--sticky">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+        <span class="badge"><span class="badge__dot"></span>Доступен</span>
+        <span class="badge badge--muted">Ветеринарный осмотр пройден</span>
+      </div>
+
+      <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Барашек №12</h1>
+      <p class="muted" style="margin-top:8px">Белая курдючная порода, родился 12 марта. Откорм: выпас с мая по сентябрь, зерно собственного поля с сентября.</p>
+
+      <div style="margin:22px 0 4px">
+        <div class="price-big">14 400 ₽ <small>за животное, живой вес 19,4 кг</small></div>
+      </div>
+
+      <dl class="kv">
+        <dt>Живой вес</dt><dd>19,4 кг (взвешиваем перед передачей)</dd>
+        <dt>Возраст</dt><dd>7 месяцев</dd>
+        <dt>Порода</dt><dd>Белая курдючная</dd>
+        <dt>Корм</dt><dd>Трава с пастбища + зерно без ГМО</dd>
+        <dt>Ушная метка</dt><dd>RU 0128 00417 (учёт в «Хорриоте»)</dd>
+        <dt>Ветеринарный статус</dt><dd>Осмотр пройден, прививки по графику</dd>
+        <dt>Готов к передаче</dt><dd>Через 2–3 дня</dd>
+        <dt>Как забрать</dt><dd>Самовывоз с фермы или доставка</dd>
+      </dl>
+
+      <a class="btn btn-primary btn-lg btn-block" href="checkout.html">Забронировать за 4 320 ₽</a>
+      <a class="btn btn-tg btn-block" style="margin-top:10px" href="index.html#tg">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.2 12.7 1.4 11c-1-.3-1-1 .2-1.5l19-7.3c.9-.3 1.6.2 1.3 2.1Z"/></svg>
+        Спросить про этого барашка
+      </a>
+
+      <div class="note" style="margin-top:18px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <span>Бронь держится 24 часа. Депозит 30% — 4 320 ₽, остаток 10 080 ₽ при передаче животного. Ссылку на оплату пришлём в Telegram или MAX.</span>
+      </div>
+      <div class="note note--terra" style="margin-top:10px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+        <span>Животное остаётся у нас до передачи. Ветеринарные документы и чек выдаём в момент передачи, копию присылаем в мессенджер заранее.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--cream-deep)">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">История животного</span>
+      <h2>Барашек №12 — до последнего дня на пастбище</h2>
+      <p class="lead">Родился в марте от овцы №41 и барана №7. До мая — вместе с маткой, потом на откормочном участке. Ни разу не болел, прививки по графику.</p>
+      <ul class="small muted" style="padding-left:18px;margin-top:14px">
+        <li>Мать: овца №41, средний приплёт 1,7 ягнёнка</li>
+        <li>Вес при рождении: 4,1 кг</li>
+        <li>Прививки: от энтеротоксемии, три вакцинации</li>
+        <li>Ветврач осматривал 6 раз, замечаний нет</li>
+        <li>Ушная метка и учёт в «Хорриоте» — с рождения</li>
+      </ul>
+    </div>
+    <div class="split--media">
+      <img src="assets/farmer-barn.jpg" alt="Фермер проверяет барашка в загоне">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Документы на животное</span>
+      <h2>Что вы получите вместе с барашком</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+        <h3>Ушная метка</h3>
+        <p>Индивидуальный номер животного, который переходит вместе с ним к вам.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h5"/></svg>
+        <h3>Выписка из «Хорриота»</h3>
+        <p>Подтверждение постановки на учёт и сведений о ветеринарном статусе.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 7h7a3 3 0 0 1 0 6H7"/><path d="M5 21h14"/></svg>
+        <h3>Ветеринарные документы</h3>
+        <p>Оформляем, если нужны для перевозки или для вашей организации.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h5"/></svg>
+        <h3>Чек 54‑ФЗ</h3>
+        <p>На каждую оплату: депозит и остаток — двумя чеками.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Так же с фермы</span>
+      <h2>Другие лоты</h2>
+    </div>
+    <div class="lots">
+      <article class="lot-card">
+        <div class="lot-card__media">
+          <img src="assets/lot-goat.jpg" alt="Козлёнок №3" loading="lazy">
+          <span class="badge badge--dark"><span class="badge__dot"></span>Доступен</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Козлёнок №3</h3>
+            <div class="lot-card__price">8 400 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta"><span><b>12,2 кг</b></span><span><b>5 мес</b></span><span>коза русская</span></div>
+          <div class="lot-card__foot"><a class="btn btn-primary" href="lot.html">Подробнее</a></div>
+        </div>
+      </article>
+      <article class="lot-card">
+        <div class="lot-card__media">
+          <img src="assets/farm-landscape.jpg" alt="Барашек №7" loading="lazy">
+          <span class="badge badge--dark" style="background:rgba(20,23,30,.6)">Забронирован</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Барашек №7</h3>
+            <div class="lot-card__price">12 600 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta"><span><b>16,8 кг</b></span><span><b>6 мес</b></span><span>белая курдючная</span></div>
+          <div class="lot-card__foot"><a class="btn btn-outline" href="lot.html">Подробнее</a></div>
+        </div>
+      </article>
+      <article class="lot-card is-sold">
+        <div class="lot-card__media">
+          <img src="assets/hero-pasture.jpg" alt="Барашек №18" loading="lazy">
+          <span class="badge badge--dark" style="background:rgba(176,64,58,.85)">Продан</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Барашек №18</h3>
+            <div class="lot-card__price">15 750 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta"><span><b>21,0 кг</b></span><span><b>8 мес</b></span><span>белая курдючная</span></div>
+          <div class="lot-card__foot"><a class="btn btn-outline" href="lot.html">Подробнее</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="margin-top:0;border-top:none;padding-top:0">
+      <span>© 2026 Ферма «Теремок»</span>
+      <span>Макет MVP · данные вымышленные</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

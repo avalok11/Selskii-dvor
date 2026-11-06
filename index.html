@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ферма «Теремок» — живые барашки и козлята под заказ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20a5 5 0 0 1 9-3"/><path d="M11 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M15 9.5 20 7l-2 4"/><path d="M15 9.5 18 13"/></svg>
+      </span>
+      <span class="logo__text">Теремок<span>ферма · животные под заказ</span></span>
+    </a>
+    <nav class="nav">
+      <a href="#lots">Лоты</a>
+      <a href="#how">Как выращиваем</a>
+      <a href="#prices">Цены</a>
+      <a href="#delivery">Как получить</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="header__cta">
+      <a class="btn btn-outline" href="account.html">Мои заказы</a>
+      <a class="btn btn-tg" href="#tg">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.2 12.7 1.4 11c-1-.3-1-1 .2-1.5l19-7.3c.9-.3 1.6.2 1.3 2.1Z"/></svg>
+        Вопрос в Telegram
+      </a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <div class="container">
+      <a href="#lots">Лоты</a>
+      <a href="#how">Как выращиваем</a>
+      <a href="#prices">Цены</a>
+      <a href="#delivery">Как получить</a>
+      <a href="#faq">Вопросы</a>
+      <a href="login.html">Войти</a>
+      <a href="account.html">Мои заказы</a>
+      <a class="btn btn-tg btn-block" href="#tg">Задать вопрос в Telegram</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <img class="hero__img" src="assets/hero-pasture.jpg" alt="Отара на пастбище в золотой час">
+  <div class="container">
+    <div class="hero__inner">
+      <span class="eyebrow" style="color:#e9c58f">Ферма во Всеволожском районе</span>
+      <h1>Живой барашек с фермы — <em>конкретный</em>, с именем и весом</h1>
+      <p>Мы продаём живых животных — каждое с номером, весом, возрастом и ценой. Вы выбираете конкретное животное, мы бронируем его за вами и передаём вместе с документами.</p>
+      <div class="hero__actions">
+        <a class="btn btn-terra btn-lg" href="#lots">
+          Смотреть лоты
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-outline btn-lg" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);color:#fff" href="#how">Как мы выращиваем</a>
+      </div>
+      <div class="hero__facts">
+        <span class="hero__fact">Откорм без ГМО</span>
+        <span class="hero__fact">Самовывоз или доставка</span>
+        <span class="hero__fact">Документы на животное</span>
+        <span class="hero__fact">Чеки 54-ФЗ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="lots">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Сейчас в продаже</span>
+      <h2>Животные, которых можно купить</h2>
+      <p>Цена зафиксирована за конкретное животное. Забронированные и проданные лоты остаются в списке — так вы видите, сколько у нас на ферме.</p>
+    </div>
+
+    <div class="lots">
+      <!-- Лот 1 -->
+      <article class="lot-card">
+        <div class="lot-card__media">
+          <img src="assets/lot-lamb.jpg" alt="Барашек №12 на пастбище" loading="lazy">
+          <span class="badge badge--dark"><span class="badge__dot"></span>Доступен</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Барашек №12</h3>
+            <div class="lot-card__price">14 400 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta">
+            <span><b>19,4 кг</b> живой вес</span>
+            <span><b>7 мес</b></span>
+            <span>белая курдючная</span>
+          </div>
+          <div class="lot-card__foot">
+            <a class="btn btn-primary" href="lot.html">Подробнее</a>
+            <a class="btn btn-outline" href="#tg">Спросить</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Лот 2 -->
+      <article class="lot-card">
+        <div class="lot-card__media">
+          <img src="assets/lot-goat.jpg" alt="Козлёнок №3 у забора" loading="lazy">
+          <span class="badge badge--dark"><span class="badge__dot"></span>Доступен</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Козлёнок №3</h3>
+            <div class="lot-card__price">8 400 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta">
+            <span><b>12,2 кг</b> живой вес</span>
+            <span><b>5 мес</b></span>
+            <span>коза русская</span>
+          </div>
+          <div class="lot-card__foot">
+            <a class="btn btn-primary" href="lot.html">Подробнее</a>
+            <a class="btn btn-outline" href="#tg">Спросить</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Лот 3 -->
+      <article class="lot-card">
+        <div class="lot-card__media">
+          <img src="assets/farm-landscape.jpg" alt="Отара вдали на пастбище" loading="lazy">
+          <span class="badge badge--dark" style="background:rgba(20,23,30,.6)">Забронирован</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Барашек №7</h3>
+            <div class="lot-card__price">12 600 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta">
+            <span><b>16,8 кг</b> живой вес</span>
+            <span><b>6 мес</b></span>
+            <span>белая курдючная</span>
+          </div>
+          <div class="lot-card__foot">
+            <a class="btn btn-outline" href="lot.html">Подробнее</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Лот 4 -->
+      <article class="lot-card is-sold">
+        <div class="lot-card__media">
+          <img src="assets/hero-pasture.jpg" alt="Отара на закате" loading="lazy">
+          <span class="badge badge--dark" style="background:rgba(176,64,58,.85)">Продан</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Барашек №18</h3>
+            <div class="lot-card__price">15 750 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta">
+            <span><b>21,0 кг</b> живой вес</span>
+            <span><b>8 мес</b></span>
+            <span>белая курдючная</span>
+          </div>
+          <div class="lot-card__foot">
+            <a class="btn btn-outline" href="lot.html">Подробнее</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Лот 5 -->
+      <article class="lot-card">
+        <div class="lot-card__media">
+          <img src="assets/farmer-barn.jpg" alt="Проверка козлёнка в загоне" loading="lazy">
+          <span class="badge badge--dark"><span class="badge__dot"></span>Доступен</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Козлёнок №9</h3>
+            <div class="lot-card__price">7 950 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta">
+            <span><b>11,4 кг</b> живой вес</span>
+            <span><b>5 мес</b></span>
+            <span>коза русская</span>
+          </div>
+          <div class="lot-card__foot">
+            <a class="btn btn-primary" href="lot.html">Подробнее</a>
+            <a class="btn btn-outline" href="#tg">Спросить</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Лот 6 -->
+      <article class="lot-card">
+        <div class="lot-card__media">
+          <img src="assets/meat-cuts.jpg" alt="Стадо на выпасе у водопоя" loading="lazy">
+          <span class="badge badge--dark"><span class="badge__dot"></span>Доступен</span>
+        </div>
+        <div class="lot-card__body">
+          <div class="lot-card__title">
+            <h3>Барашек №21</h3>
+            <div class="lot-card__price">13 860 ₽<small>за животное</small></div>
+          </div>
+          <div class="lot-card__meta">
+            <span><b>18,5 кг</b> живой вес</span>
+            <span><b>6 мес</b></span>
+            <span>белая курдючная</span>
+          </div>
+          <div class="lot-card__foot">
+            <a class="btn btn-primary" href="lot.html">Подробнее</a>
+            <a class="btn btn-outline" href="#tg">Спросить</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="price-note">Животные снимаются с продажи, когда их покупают или когда ветслужба даёт отвод. Базовая цена за килограмм меняется три раза в год — весной, летом и осенью–зимой, но цена конкретного животного фиксируется в момент брони и не меняется.</p>
+  </div>
+</section>
+
+<section class="section" id="how" style="background:var(--cream-deep)">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Как мы выращиваем</span>
+      <h2>От ягнёнка до пастбища — без спешки</h2>
+      <p>Средний срок от рождения до готовности к продаже — 7–8 месяцев. За это время животное ест траву на пастбище и зерно без ГМО, и мы не торопим этот процесс ради веса.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">1</div>
+        <h3>Весна: рождение</h3>
+        <p>Ягнята и козлята появляются на пастбище в марте–мае. Первые недели — молоко матери, приучаем к выпасу.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <h3>Лето: выпас</h3>
+        <p>Июнь–август — свободный выпас 12 часов в сутки. Свежая трава, движение, никаких кормовых добавок.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <h3>Осень: откорм</h3>
+        <p>Сентябрь–октябрь — зерно собственного поля: ячмень, овёс, горох. Без ГМО и без гормонов роста.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">4</div>
+        <h3>Ноябрь: готовность</h3>
+        <p>Животных взвешиваем, ставим на учёт и маркируем. Дальше — ветеринарный осмотр и можно забирать.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Эксклюзивные продажи</span>
+      <h2>Вы видите, кого покупаете</h2>
+      <p class="lead">Каждое животное получает номер, ушную метку и бирку, взвешивается и фотографируется. На карточке — порода, возраст, вес, условия откорма и фиксированная цена.</p>
+      <p class="muted">Если нужен барашек под конкретный вес — скажите, подберём ближайший лот или поставим животное в лист ожидания и сообщим, когда подходящее появится.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+        <a class="btn btn-primary" href="lot.html">Посмотреть карточку животного</a>
+        <a class="btn btn-outline" href="#prices">Цены по сезонам</a>
+      </div>
+    </div>
+    <div class="split--media">
+      <img src="assets/farmer-barn.jpg" alt="Проверка животного в загоне">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="prices">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Цены</span>
+      <h2>Сезонные цены на живой вес</h2>
+      <p>Цена за килограмм зависит от корма: весной и летом в рационе больше свежей травы, осенью — зерно. Мы считаем от базовой цены и получаем цену конкретного животного.</p>
+    </div>
+
+    <div class="seasons" role="tablist">
+      <button role="tab" aria-selected="true" data-season="spring">Весна · март–май</button>
+      <button role="tab" aria-selected="false" data-season="summer">Лето · июнь–август</button>
+      <button role="tab" aria-selected="false" data-season="winter">Осень–зима · сент.–февр.</button>
+    </div>
+
+    <table class="price-table" id="priceTable">
+      <thead>
+        <tr><th>Животное</th><th>Типичный вес</th><th>Цена, ₽/кг</th><th>Ориентир за животное</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p class="price-note">Итоговая цена считается по фактическому весу конкретного животного и фиксируется в карточке лота. Если животное весит больше или меньше — цена не пересчитывается задним числом.</p>
+  </div>
+</section>
+
+<section class="section" id="delivery" style="background:var(--cream-deep)">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Как проходит заказ</span>
+      <h2>От выбора до передачи — четыре шага</h2>
+    </div>
+    <div class="order-steps">
+      <div class="ostep">
+        <h3>Выбираете животное</h3>
+        <p>Смотрите фото, видео, вес, историю и ветеринарный статус конкретного лота в каталоге.</p>
+      </div>
+      <div class="ostep">
+        <h3>Бронируете за 30%</h3>
+        <p>Депозит фиксирует животное за вами на 24 часа. Если не оплатили — лот возвращается в продажу.</p>
+      </div>
+      <div class="ostep">
+        <h3>Оплачиваете по ссылке</h3>
+        <p>Ссылка на оплату приходит в Telegram, MAX или на почту: СБП в приложении любого банка или карта.</p>
+      </div>
+      <div class="ostep">
+        <h3>Забираете животное</h3>
+        <p>Самовывоз с фермы или доставка. Остаток оплачиваете при передаче, документы получаете сразу.</p>
+      </div>
+    </div>
+
+    <div class="features" style="margin-top:34px">
+      <div class="feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-7 9 7v11"/><path d="M9 21v-6h6v6"/></svg>
+        <h3>Своё хозяйство</h3>
+        <p>Всеволожский район, 40 км от города. Приезжайте смотреть животных.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 7h7a3 3 0 0 1 0 6H7"/><path d="M5 21h14"/></svg>
+        <h3>Живой вес</h3>
+        <p>Взвешиваем при вас перед передачей. Цена зафиксирована по карточке лота.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h5"/></svg>
+        <h3>Документы</h3>
+        <p>Ушная метка и учёт в «Хорриоте», ветеринарный осмотр, чек 54‑ФЗ.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v9H3z"/><path d="M14 9h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+        <h3>Самовывоз или доставка</h3>
+        <p>Забрать на ферме или доставить своим транспортом / нашим, в пределах 30 км.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Вопросы</span>
+      <h2>Частые вопросы</h2>
+      <div class="faq" style="margin-top:20px">
+        <details open>
+          <summary>Можно ли выбрать конкретного барашка?</summary>
+          <p>Да — это и есть наша модель. У каждого животного номер, фото, видео, вес и фиксированная цена. Если подходящего веса сейчас нет, оставьте заявку: сообщим, когда появится.</p>
+        </details>
+        <details>
+          <summary>Какие документы на животное?</summary>
+          <p>Ушная метка и запись в системе «Хорриот» — это обязательный учёт. Дополнительно оформляем ветеринарные сопроводительные документы, если они нужны именно вам: при продаже юридическому лицу или при перевозке. Всё готовим заранее и выдаём вместе с животным.</p>
+        </details>
+        <details>
+          <summary>Можно ли посмотреть животное перед покупкой?</summary>
+          <p>Да, и мы это советуем. Приезжайте на ферму во Всеволожском районе или попросите видео с боков и с весами — пришлём в Telegram или MAX.</p>
+        </details>
+        <details>
+          <summary>Как быстро можно забрать?</summary>
+          <p>Обычно животное готово к передаче в течение 2–3 дней после брони. Если нужен конкретный день, договариваемся заранее при оформлении.</p>
+        </details>
+        <details>
+          <summary>А если передумал после оплаты депозита?</summary>
+          <p>Депозит возвращается полностью, если животное не передано в согласованный срок. Если передумал раньше — просто не оплачивайте депозит, броня снимется через 24 часа.</p>
+        </details>
+      </div>
+    </div>
+    <div class="split--media">
+      <img src="assets/farm-landscape.jpg" alt="Отара на пастбище">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="login" style="background:var(--cream-deep)">
+  <div class="container">
+    <div class="tg-card">
+      <div>
+        <span class="eyebrow">Личный кабинет</span>
+        <h2>Войдите — и вся история заказов ваша</h2>
+        <p class="lead" style="margin-top:12px">Создайте аккаунт одним из трёх способов. Он привязывает заказы к вам: видно статусы, оплату, документы по животному и можно повторить прошлый заказ в один тап.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+          <a class="btn btn-primary" href="login.html">Войти</a>
+          <a class="btn btn-outline" href="account.html">Мои заказы</a>
+        </div>
+        <p class="small muted" style="margin-top:16px">Вход по email — код из письма. Вход через Telegram и MAX — без пароля, по данным мессенджера. Можно привязать все три способа к одному аккаунту.</p>
+      </div>
+      <div class="tg-chat">
+        <div class="tg-bubble tg-bubble--in">Войдите по email</div>
+        <div class="tg-bubble tg-bubble--out">Отправили код на a***@mail.ru</div>
+        <div class="tg-bubble tg-bubble--in">Введите код</div>
+        <div class="tg-bubble tg-bubble--out">Готово, вошёл. А мои заказы?</div>
+        <div class="tg-chat__time">21:14</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tg">
+  <div class="container">
+    <div class="tg-card">
+      <div>
+        <span class="eyebrow">Связь</span>
+        <h2>Спросите прямо у фермера</h2>
+        <p class="lead" style="margin-top:12px">Все вопросы — в мессенджере. Там же мы присылаем ссылку на оплату, фото и видео животного перед передачей и документы. Отвечаем ежедневно с 8:00 до 21:00, обычно за 10 минут.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+          <a class="btn btn-tg" href="#">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.2 12.7 1.4 11c-1-.3-1-1 .2-1.5l19-7.3c.9-.3 1.6.2 1.3 2.1Z"/></svg>
+            @teremok_meat
+          </a>
+          <a class="btn btn-outline" href="#">MAX: @teremok_meat</a>
+          <a class="btn btn-outline" href="tel:+78120000000">+7 (812) 000-00-00</a>
+        </div>
+      </div>
+      <div class="tg-chat">
+        <div class="tg-bubble tg-bubble--in">Здравствуйте! Барашек №12, 19,4 кг — он ещё свободен?</div>
+        <div class="tg-bubble tg-bubble--out">Здравствуйте! Да, свободен. Могу прислать видео с пастбища и фото при взвешивании.</div>
+        <div class="tg-bubble tg-bubble--in">Давайте, и сколько будет депозит?</div>
+        <div class="tg-bubble tg-bubble--out">30% — 4 320 ₽. Остальное — при передаче животного.</div>
+        <div class="tg-chat__time">10:24</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px">
+          <span class="logo__mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20a5 5 0 0 1 9-3"/><path d="M11 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M15 9.5 20 7l-2 4"/><path d="M15 9.5 18 13"/></svg>
+          </span>
+          <span class="logo__text">Теремок<span>ферма · животные под заказ</span></span>
+        </div>
+        <p style="max-width:34ch;font-size:.92rem">Небольшое хозяйство во Всеволожском районе. Живые барашки и козлята под заказ, с фермы — напрямую.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#lots">Лоты в продаже</a></li>
+          <li><a href="#how">Как мы выращиваем</a></li>
+          <li><a href="#prices">Цены по сезонам</a></li>
+          <li><a href="#delivery">Как получить</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+          <li><a href="login.html">Вход и аккаунт</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+78120000000">+7 (812) 000-00-00</a></li>
+          <li><a href="#tg">@teremok_meat в Telegram</a></li>
+          <li><a href="#tg">@teremok_meat в MAX</a></li>
+          <li>Ферма: Ленобласть, Всеволожский район</li>
+          <li>Пн–Вс, 8:00–21:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Ферма «Теремок»</span>
+      <span>Макет MVP · данные вымышленные</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

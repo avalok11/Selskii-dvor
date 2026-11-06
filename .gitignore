@@ -1,0 +1,50 @@
+# --- Секреты и локальное окружение ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Node / Next.js / NestJS ---
+node_modules/
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+
+# --- Python (на случай выбора Django-стека) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# --- Базы данных и дампы ---
+*.sqlite
+*.sqlite3
+*.dump
+backups/
+
+# --- Медиа и загруженные пользователями файлы ---
+storage/uploads/
+public/uploads/
+!public/uploads/.gitkeep
+
+# --- Логи и временное ---
+*.log
+npm-debug.log*
+tmp/
+.cache/
+
+# --- IDE и ОС ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# --- Инфраструктура (содержит параметры серверов) ---
+infra/local/
+*.local.*

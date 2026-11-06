@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Оформление заказа — Ферма «Теремок»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20a5 5 0 0 1 9-3"/><path d="M11 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M15 9.5 20 7l-2 4"/><path d="M15 9.5 18 13"/></svg>
+      </span>
+      <span class="logo__text">Теремок<span>ферма · животные под заказ</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html#lots">Лоты</a>
+      <a href="index.html#how">Как выращиваем</a>
+      <a href="index.html#prices">Цены</a>
+      <a href="index.html#delivery">Как получить</a>
+    </nav>
+    <div class="header__cta">
+      <a class="btn btn-outline" href="account.html">Мои заказы</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <div class="container">
+      <a href="index.html#lots">Лоты</a>
+      <a href="index.html#how">Как выращиваем</a>
+      <a href="index.html#prices">Цены</a>
+      <a href="login.html">Войти</a>
+      <a href="account.html">Мои заказы</a>
+      <a class="btn btn-tg btn-block" href="index.html#tg">Задать вопрос в Telegram</a>
+    </div>
+  </div>
+</header>
+
+<section class="section section--tight">
+  <div class="container">
+    <nav class="crumbs">
+      <a href="index.html">Главная</a> <span>/</span>
+      <a href="lot.html">Барашек №12</a> <span>/</span>
+      <span>Оформление</span>
+    </nav>
+
+    <div class="stepper" style="margin-top:14px">
+      <span data-step-label="1" class="active"><span>1</span> Данные</span>
+      <span data-step-label="2"><span>2</span> Оплата</span>
+      <span data-step-label="3"><span>3</span> Готово</span>
+    </div>
+
+    <div class="checkout">
+      <!-- Левая колонка: шаги -->
+      <div>
+        <!-- Шаг 1 -->
+        <section data-step="1">
+          <h2 style="font-size:1.7rem;margin-bottom:6px">Кто покупает и как забрать</h2>
+          <p class="muted" style="margin-bottom:20px">Данные нужны для договора, чека и документов на животное. Telegram или MAX подставим автоматически, если вы открыли макет из мессенджера.</p>
+
+          <!-- Вход -->
+          <div class="panel" style="margin-bottom:22px;padding:18px">
+            <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+              <div style="min-width:220px;flex:1">
+                <h3 style="font-size:1rem;margin-bottom:4px">Войдите, чтобы сохранить историю заказов</h3>
+                <p class="small muted" style="margin:0">Без входа тоже можно оформить заказ — но статус и документы придётся искать в переписке.</p>
+              </div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <a class="btn btn-outline" href="login.html">Email</a>
+                <a class="btn btn-tg" href="login.html">Telegram</a>
+                <a class="btn btn-outline" href="login.html">MAX</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row--2">
+            <div class="field">
+              <label for="name">Как вас зовут</label>
+              <input id="name" type="text" value="Алексей" placeholder="Имя и фамилия">
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input id="phone" type="tel" value="+7 (921) 000-00-00" placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="tg">Telegram или MAX <span class="hint">— пришлём ссылку на оплату, фото и документы</span></label>
+            <input id="tg" type="text" value="@alexey" placeholder="@username">
+          </div>
+
+          <div class="field">
+            <label>Способ получения</label>
+            <label class="choice">
+              <input type="radio" name="delivery" checked>
+              <span class="choice__body">
+                <span class="choice__title">Самовывоз с фермы</span>
+                <span class="choice__desc">Всеволожский район, 40 км от города. Ежедневно с 9:00 до 21:00</span>
+              </span>
+              <span class="choice__price">0 ₽</span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="delivery">
+              <span class="choice__body">
+                <span class="choice__title">Доставка животного</span>
+                <span class="choice__desc">В пределах 30 км от фермы, своим хозтранспортом. Оформляем ветеринарные документы на перевозку</span>
+              </span>
+              <span class="choice__price">900 ₽</span>
+            </label>
+          </div>
+
+          <div class="field">
+            <label for="address">Адрес доставки <span class="hint">— если самовывоз, не обязательно</span></label>
+            <input id="address" type="text" value="Санкт-Петербург, ул. Пушкинская, 12" placeholder="Улица, дом, квартира">
+          </div>
+
+          <div class="row row--2">
+            <div class="field">
+              <label for="date">Желаемая дата передачи</label>
+              <select id="date">
+                <option>Как можно скорее (2–3 дня)</option>
+                <option selected>Через 3–4 дня</option>
+                <option>Через неделю</option>
+                <option>Уточню в мессенджере</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="purpose">Покупаете для себя или для организации</label>
+              <select id="purpose">
+                <option selected>Для личного потребления</option>
+                <option>Для организации (нужны документы)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="comment">Пожелания <span class="hint">— необязательно</span></label>
+            <textarea id="comment" placeholder="Например: нужен барашок под 20 кг, заберу сам, передача после 18:00"></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-lg" data-goto="2">Дальше — к оплате</button>
+        </section>
+
+        <!-- Шаг 2 -->
+        <section data-step="2" hidden>
+          <h2 style="font-size:1.7rem;margin-bottom:6px">Как оплатить</h2>
+          <p class="muted" style="margin-bottom:20px">Ссылку сформирует платёжный терминал Т‑Банка. Чек 54‑ФЗ придёт на указанную почту сразу после оплаты.</p>
+
+          <label class="choice">
+            <input type="radio" name="pay" checked>
+            <span class="choice__body">
+              <span class="choice__title">Депозит 30%, остаток при передаче животного</span>
+              <span class="choice__desc">Рекомендуем: животное бронируется за вами на 24 часа. Остаток 10 080 ₽ — при передаче, на ферме или при доставке</span>
+            </span>
+            <span class="choice__price">4 320 ₽</span>
+          </label>
+
+          <label class="choice">
+            <input type="radio" name="pay">
+            <span class="choice__body">
+              <span class="choice__title">Оплатить сразу целиком</span>
+              <span class="choice__desc">14 400 ₽. Животное готовим к передаче сразу после оплаты</span>
+            </span>
+            <span class="choice__price">14 400 ₽</span>
+          </label>
+
+          <div class="field" style="margin-top:20px">
+            <label>Способ платежа</label>
+            <label class="choice">
+              <input type="radio" name="method" checked>
+              <span class="choice__body">
+                <span class="choice__title">СБП — ссылка в приложении банка</span>
+                <span class="choice__desc">Откроем Т‑Банк или любой другой банк по ссылке. Без комиссии</span>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="method">
+              <span class="choice__body">
+                <span class="choice__title">Банковская карта</span>
+                <span class="choice__desc">Страница оплаты на защищённом терминале банка</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Депозит возвращается полностью, если животное не передано в согласованный срок.</span>
+          </div>
+
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+            <button class="btn btn-primary btn-lg" data-goto="3">Сформировать ссылку</button>
+            <button class="btn btn-outline btn-lg" data-goto="1">Назад</button>
+          </div>
+        </section>
+
+        <!-- Шаг 3 -->
+        <section data-step="3" hidden>
+          <h2 style="font-size:1.7rem;margin-bottom:6px">Готово — бронируем барашка</h2>
+          <p class="muted" style="margin-bottom:20px">Ссылка на оплату уже сформирована. Она же продублирована в мессенджере и в личном кабинете.</p>
+
+          <div class="panel" style="text-align:center">
+            <span class="badge badge--terra"><span class="badge__dot"></span>Ожидает оплаты</span>
+            <div class="pay-sum" style="margin:16px 0 4px">4 320 ₽</div>
+            <p class="pay-meta">Депозит 30% по лоту «Барашек №12»</p>
+            <div class="qr" style="width:180px;height:180px">
+              <svg viewBox="0 0 21 21" shape-rendering="crispEdges" fill="#14171e">
+                <rect width="21" height="21" fill="#fff"/>
+                <path fill="#14171e" d="M1 1h7v7H1zM3 3h3v3H3zM13 1h7v7h-7zM15 3h3v3h-3zM1 13h7v7H1zM3 15h3v3H3zM9 1h2v2H9zM9 4h1v4H9zM11 3h1v1h-1zM12 5h2v1h-2zM10 9h1v1h-1zM11 10h2v2h-2zM13 9h2v2h-2zM16 9h4v1h-4zM17 11h3v2h-3zM9 12h2v1H9zM9 14h1v2H9zM10 16h1v1h-1zM12 13h2v2h-2zM14 12h1v2h-1zM15 15h2v1h-2zM17 15h1v2h-1zM18 17h2v2h-2zM11 19h3v1h-3zM14 18h1v2h-1z"/>
+              </svg>
+            </div>
+            <p class="small muted" style="max-width:34ch;margin:0 auto 18px">Наведите камеру телефона — откроется выбор банка. Или оплатите по ссылке в приложении Т‑Банка.</p>
+            <a class="btn btn-primary btn-lg btn-block" href="payment.html">Открыть оплату</a>
+            <div class="link-box" style="margin-top:14px">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+              <span>https://qr.nspk.ru/pay?dp=4a1c9f2e8b7d…</span>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+            <a class="btn btn-tg" href="index.html#tg">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.2 12.7 1.4 11c-1-.3-1-1 .2-1.5l19-7.3c.9-.3 1.6.2 1.3 2.1Z"/></svg>
+              Ссылка отправлена
+            </a>
+            <a class="btn btn-outline" href="account.html">Открыть мои заказы</a>
+            <button class="btn btn-outline" data-goto="1">Изменить данные</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Правая колонка: сводка -->
+      <aside class="summary">
+        <div class="summary__lot">
+          <img src="assets/lot-lamb.jpg" alt="Барашек №12">
+          <div>
+            <h3 style="font-size:1rem">Барашек №12</h3>
+            <p class="small muted" style="margin:2px 0 0">19,4 кг · белый курдючный</p>
+          </div>
+        </div>
+        <div class="summary__line"><span>Стоимость животного</span><span>14 400 ₽</span></div>
+        <div class="summary__line"><span>Депозит сейчас (30%)</span><span>4 320 ₽</span></div>
+        <div class="summary__line"><span>Остаток при передаче</span><span>10 080 ₽</span></div>
+        <div class="summary__line"><span>Самовывоз</span><span>0 ₽</span></div>
+        <div class="summary__total"><span>К оплате сейчас</span><b>4 320 ₽</b></div>
+        <p class="small muted" style="margin-top:14px">Остальное — при передаче животного. Ссылку на оплату пришлём в мессенджер, на почту и покажем здесь.</p>
+        <div class="note" style="margin-top:16px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+          <span>Бронь барашка №12 действует 24 часа с момента оформления заказа.</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="margin-top:0;border-top:none;padding-top:0">
+      <span>© 2026 Ферма «Теремок»</span>
+      <span>Макет MVP · данные вымышленные</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
