@@ -1,4 +1,4 @@
-/* Ферма «Теремок» — логика макета */
+/* Сельский двор — логика макета */
 
 document.addEventListener('DOMContentLoaded', function () {
   burger();
