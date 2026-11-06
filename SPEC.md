@@ -5,6 +5,7 @@
 **Заказчик:** Сельский двор (Алексей) · **Разработчик:** один человек, Python-профиль
 **Основание:** клиентский макет MVP в `selskii-dvor/` (`index.html`, `lot.html`, `login.html`, `account.html`, `checkout.html`, `payment.html`, `preview.html`)
 **План проекта:** [`ROADMAP.md`](./ROADMAP.md) — этапы, статусы, журнал решений
+**Репозиторий:** https://github.com/avalok11/Selskii-dvor · **Рабочая папка:** `/Users/alexeyyarkov/opt/selskii-dvor/`
 
 ### Журнал версий
 
